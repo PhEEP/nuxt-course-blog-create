@@ -7,21 +7,30 @@
       <PostPreview
         id="1"
         thumbnail="../moneycat.jpg"
+        title="Hello There"
       />
-      <PostPreview />
-      <PostPreview />
+      <PostPreview
+        id="2"
+        thumbnail="../moneycat.jpg"
+        title="Hello there again"
+      />
+      <PostPreview
+        id="3"
+        thumbnail="../moneycat.jpg"
+        title="Hello there the third time"
+      />
     </section>
   </div>
 </template>
 
 <script>
-import PostPreview from '@/components/Posts/PostPreview';
+import PostPreview from "@/components/Posts/PostPreview";
 
 export default {
   components: {
     PostPreview
   }
-}
+};
 </script>
 
 <style>
@@ -30,6 +39,7 @@ export default {
   position: relative;
   padding: 30px;
   box-sizing: border-box;
+  background-image: url("~assets/images/main-page-background.jpg");
   background-position: center;
   background-size: cover;
 }

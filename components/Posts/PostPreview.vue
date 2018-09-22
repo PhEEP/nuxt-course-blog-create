@@ -1,16 +1,13 @@
 <template>
   <nuxt-link
     :to="'/posts/' + id"
-    class="post-preview"
-  >
+    class="post-preview">
     <article>
       <div
-        :style="{backgroundImage: `url(${thumbnail})`}"
+        :style="{backgroundImage: 'url(' + thumbnail + ')'}"
         class="post-thumbnail"
       />
-      <div
-        class="post-content"
-      >
+      <div class="post-content">
         <h1>{{ title }}</h1>
         <p>{{ previewText }}</p>
       </div>
@@ -19,28 +16,29 @@
 </template>
 
 <script>
-  export default {
-    name: 'PostPreview',
-    props: {
-      id: {
-        type: String,
-        required: true,
-      },
-      title: {
-        type: String,
-        required: true
-      },
-      previewText: {
-        type: String,
-        required: true
-      },
-      thumbnail: {
-        type: String,
-        required: true,
-      }
+export default {
+  name: "PostPreview",
+  props: {
+    id: {
+      type: String,
+      required: true
+    },
+    title: {
+      type: String,
+      required: true
+    },
+    previewText: {
+      type: String,
+      required: true
+    },
+    thumbnail: {
+      type: String,
+      required: true
     }
   }
+};
 </script>
+
 
 <style scoped>
 .post-preview {
