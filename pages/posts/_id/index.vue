@@ -18,6 +18,13 @@
   </div>
 </template>
 
+<script>
+export default {
+  layout: "postLayout"
+};
+</script>
+
+
 <style scoped>
 .single-post-page {
   padding: 30px;
