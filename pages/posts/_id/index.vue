@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  layout: "postLayout"
+  // layout: "postLayout"
 };
 </script>
 
